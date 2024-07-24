@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+img {width: 100%;}
+body {background-color: #f3f3f3; font-family: "pretendard", sans-serif; font-style: normal;}
+
+.clearfix::after {display: block; content:""; clear: both;}
+
+article {
+    width: 95%;
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con_text {
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    min-width: 700px;
+    font-weight: 400;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 30px;
+    opacity: 0;
+    transition-duration: 0.8s;
+}
+
+.con_text_wrap {
+    width: 75%;
+    min-width: 540px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.con_text span {font-size: 17px;}
+
+.con_text h2 {
+    margin-top: 10px;
+    margin-left: -4px;
+    margin-bottom: 56px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 74px;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    line-height: 66px;
+}
+
+.con_text p {
+    font-size: 17px;
+    line-height: 26px;
+    color: #999999;
+}
+
+.con_menu {width: calc(50% - 10px);}
+
+.con_menu div {
+    width: calc(50% - 10px);
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.con_menu div img {
+    width: fit-content;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(18px);
+    transition-duration: 0.2s;
+}
+
+.con_menu div>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.con_menu div>a>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    user-select: none;
+}
+
+.work {
+    height: 100%;
+    float: left;
+}
+
+.people {
+    height: calc(50% - 10px);
+    float: right;
+}
+
+.news {
+    margin-top: 20px;
+    height: calc(50% - 10px);
+    float: right;
+}
+
+.slider {
+    width: 95%;
+    max-width: 1600px;
+    margin: 20px auto;
+    border-radius: 30px;
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.slider_img {
+    width: 600%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.slider_img li {
+    width: calc(100% / 6);
+    height: 100%;
+    position: relative;
+}
+
+.slider_img li img {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gradient_box {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
+}
+
+.slider_info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.slider_info ul {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider_info li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.slider_info li:nth-child(1) {display: block;}
+
+.slider_info li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.text_wrap {
+    width: calc(97% - 60px);
+    height: 22%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    user-select: none;
+}
+
+h3 {
+    position: absolute;
+    left: 0;
+    font-family: "Jost", sans-serif;
+    font-size: 44px;
+    font-weight: 200;
+    color: #ffffff;
+}
+
+h3 span {
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.arrow {
+    position: absolute;
+    top: 20%;
+    right: 1%;
+}
+
+.foot_text {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #bbbbbb;
+}
+
+@media only screen and (max-width: 1440px) {
+
+    .con_text {min-width: 600px;}
+
+    .con_text_wrap {
+        width: 70%;
+        min-width: 470px;
+    }
+    
+    .con_text span {font-size: 16px;}
+    
+    .con_text h2 {
+        margin-top: 8px;
+        margin-bottom: 40px;
+        font-size: 64px;
+        line-height: 58px;
+    }
+    
+    .con_text p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    
+    .con_menu div>a>span {font-size: 34px;}
+}
