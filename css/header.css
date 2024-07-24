@@ -32,7 +32,7 @@ header {
     position: absolute;
     filter: blur(24px);
     opacity: 0;
-    transition-duration: 8s;
+    /* transition-duration: 8s; */
 }
 
 .h_bg>img {

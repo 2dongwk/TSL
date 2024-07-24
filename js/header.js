@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     $('header').delay(500).fadeIn(600)
     $('h1').delay(800).fadeIn(600)
-    $('.h_bg').delay(800).css({'opacity':'1'})
+    $('.h_bg').delay(1000).animate({'opacity':'1'},3000)
     $('.h_bg>img').delay(800).animate({'rotate':'-45deg'},10000,'linear')
     $('nav').delay(1100).fadeIn(600)
 
