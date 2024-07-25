@@ -1,6 +1,8 @@
 $(document).ready(function(){
-    let bg_back = 45;
+    let bg_back = 45,
+        window_w = $(window).width();
 
+        
     $('header').delay(500).fadeIn(600)
     $('h1').delay(800).fadeIn(600)
     $('.h_bg').delay(1000).animate({'opacity':'1'},3000)

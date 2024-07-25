@@ -1,16 +1,20 @@
 $(document).ready(function(){
-    $('.con_text').delay(200).animate({'opacity':'1'})
+    $('.con_text').animate({'opacity':'1'},50)
     for(let i = 0; i<3; i++){
         $('.con_menu div').eq(i).delay(600 + (i*200)).animate({'opacity':'1'},600)
     }
 
+    $('.slider').delay(1400).animate({'opacity':'1'},400)
+
     let article_w = $('article').width();
     
-    $('article, .slider').css({'height':article_w / 3})
+    $('article').css({'height':article_w / 3})
+    $('.slider').css({'height':article_w / 2.5})
 
     setInterval(function(){
-        $('.slider_img').stop().animate({'left':'-100%'},500,function(){
-            $('.slider_img li:first').appendTo($('.slider_img'))
+        $('.slider_img li:first').stop().animate({'opacity':'0.1'},700)
+        $('.slider_img').stop().animate({'left':'-100%'},700,function(){
+            $('.slider_img li:first').appendTo($('.slider_img')).css({'opacity':'1'})
             $('.slider_img').css({'left':'0'})
         })
 
@@ -21,16 +25,16 @@ $(document).ready(function(){
     },3000)
 
     function arrow(){
-        $('.arrow').stop().animate({'right':'0'},400,function(){
-            $(this).stop().animate({'right':'1%'},400)
+        $('.arrow').stop().animate({'right':'0'},500,function(){
+            $(this).stop().animate({'right':'1%'},500)
         })
     }
     
     $('.slider_info a').mouseover(function(){
-        $('.arrow').stop().animate({'right':'0'},400,function(){
-            $(this).stop().animate({'right':'1%'},400)
+        $('.arrow').stop().animate({'right':'0'},500,function(){
+            $(this).stop().animate({'right':'1%'},500)
         })
-        arrow_on = setInterval(arrow, 800)
+        arrow_on = setInterval(arrow, 1000)
     }).mouseout(function(){
         clearInterval(arrow_on)
     })

@@ -85,19 +85,22 @@ nav a {color: #888888;}
 
 .lang span {user-select: none;}
 
-.menu li a, .lang a {transition-duration: 0.2s;}
+.menu, .lang, .menu li a, .lang a, .hamburger {transition-duration: 0.2s;}
 
 .hamburger {
     width: 30px;
     position: absolute;
     top: 50%;
-    right: 40px;
+    right: 0;
     transform: translate(0, -50%);
     opacity: 0.6;
     display: none;
+    cursor: pointer;
 }
 
 .hamburger path {stroke: #ffffff;}
+
+.hamburger:hover {opacity: 1;}
 
 @media only screen and (max-width: 1440px) and (min-width: 931px) {
     nav {
@@ -110,7 +113,10 @@ nav a {color: #888888;}
 }
 
 @media only screen and (max-width: 930px) {
-    nav {display: none;}
+    .menu, .lang {
+        display: none;
+    }
+
     .hamburger {display: block;}
 
     .menu li {margin-right: 50px;}

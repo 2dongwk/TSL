@@ -121,8 +121,9 @@ article {
     margin: 20px auto;
     border-radius: 30px;
     position: relative;
-    background-color: #ffffff;
+    background-color: #000000;
     overflow: hidden;
+    opacity: 0;
 }
 
 .slider_img {
@@ -190,7 +191,7 @@ article {
 
 .text_wrap {
     width: calc(97% - 60px);
-    height: 22%;
+    height: 20%;
     position: absolute;
     left: 50%;
     bottom: 0;
