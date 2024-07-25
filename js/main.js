@@ -22,7 +22,7 @@ $(document).ready(function(){
             $(this).appendTo('.slider_info ul')
         })
         .siblings('.slider_info li:first').stop().fadeIn(800)
-    },3000)
+    },4000)
 
     function arrow(){
         $('.arrow').stop().animate({'right':'0'},500,function(){
