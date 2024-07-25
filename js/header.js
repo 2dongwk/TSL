@@ -21,6 +21,10 @@ $(document).ready(function(){
     $('.hamburger').click(function(){
         $('body').css({'padding-right':'15px', 'overflow':'hidden'})
         $('header').css({'width':'calc(95% - 14.6px)', 'left':'calc(50% - 7.3px)'})
+        if($(window).width() <= 550){
+            $('body').css({'padding-right':'0', 'overflow':'hidden'})
+            $('header').css({'width':'95%', 'left':'50%'})
+        }
         $('.ham_on').css({'display':'block'}).addClass('on')
         $('.ham_bg').animate({'opacity':'1'},200)
         $('.ham_nav').animate({'right':'0'},200)
