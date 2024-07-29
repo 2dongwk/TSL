@@ -14,7 +14,7 @@ header .menu li:nth-child(1) a {
 }
 
 .filter {
-    margin: 40px 0 80px 0;
+    margin: 40px 0 70px 0;
     filter: blur(100px);
     animation-name: blur;
     animation-duration: 0.8s;
