@@ -50,4 +50,23 @@ $(document).ready(function(){
             }
         }
     })
+
+    let scroll_now = $(window).scrollTop(),
+        show_range = 15;
+
+    $(window).on('scroll',function(){
+        let scroll_top = $(this).scrollTop();
+
+        if(scroll_top > scroll_now){
+            $('header').stop().fadeOut(200)
+        }else{
+            if((scroll_now - scroll_top) > show_range){
+                $('header').stop().fadeIn()
+            }else if(scroll_top < 20){
+                $('header').stop().fadeIn()
+            }
+        }
+
+        scroll_now = scroll_top
+    })
 })
