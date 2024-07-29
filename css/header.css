@@ -108,8 +108,8 @@ nav a {color: #888888;}
 
 .ham_on {display: none;}
 
-.space_box_top {width: 100%; height: 120px;}
-.space_box_btm {width: 100%; height: 100px;}
+.space_box_top {width: 100%; height: 120px; background-color: red;}
+.space_box_btm {width: 100%; height: 100px; background-color: blue;}
 
 footer {
     width: 100%;
