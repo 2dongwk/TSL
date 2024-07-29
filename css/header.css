@@ -8,7 +8,10 @@ body {background-color: #f3f3f3; font-family: "pretendard", sans-serif; font-sty
 
 .clearfix::after {display: block; content:""; clear: both;}
 
-.wrap {overflow: hidden;}
+.wrap {
+    position: relative;
+    overflow: hidden;
+}
 
 header {
     width: 95%;
@@ -105,9 +108,21 @@ nav a {color: #888888;}
 
 .ham_on {display: none;}
 
+.space_box_top {width: 100%; height: 120px;}
+.space_box_btm {width: 100%; height: 100px;}
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+}
+
 .foot_text {
-    margin-top: 5%;
-    margin-bottom: 2%;
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
     font-size: 15px;
     font-weight: 400;
     letter-spacing: 0.05em;
@@ -185,46 +200,19 @@ nav a {color: #888888;}
     .ham_nav a:hover {color: #000000; text-decoration: underline;}
     .ham_lang li:nth-child(1) a {color: #000000; text-decoration: none;}
     
+    .space_box_btm {height: 70px;}
+    footer {height: 40px;}
     .foot_text {
+        width: max-content;
         font-size: 13px;
-        margin-top: 46px;
-        margin-bottom: 20px;
     }
 }
 
 @media only screen and (max-width: 550px) {
-    header {
-        height: 60px;
-        border-radius: 20px;
-        top: 10px;
-    }
-
-    .h_bg {
-        height: 60px;
-        filter: blur(10px);
-    }
-
-    .h_bg>img {
-        width: 800px;
-        height: 800px;
-    }
-
-    .header_wrap {height: 60px;}
-
-    h1 {
-        width: 140px;
-        top: 43%;
-        left: 30px;
-    }
+    .h_bg {filter: blur(20px);}
 
     .menu, .lang {display: none;}
-
-    .hamburger {
-        width: 20px;
-        right: 30px;
-        display: block;
-    }
-
+    .hamburger {display: block;}
     .ham_on {display: block;}
 
     .ham_on {
@@ -280,9 +268,44 @@ nav a {color: #888888;}
     .ham_nav a:hover {color: #000000; text-decoration: underline;}
     .ham_lang li:nth-child(1) a {color: #000000; text-decoration: none;}
     
+    .space_box_btm {height: 70px;}
+    footer {height: 40px;}
     .foot_text {
+        width: max-content;
         font-size: 13px;
-        margin-top: 46px;
-        margin-bottom: 20px;
     }
+
+    /*
+    header {
+        height: 60px;
+        border-radius: 20px;
+        top: 10px;
+    }
+
+    .h_bg {
+        height: 60px;
+        filter: blur(10px);
+    }
+
+    .h_bg>img {
+        width: 800px;
+        height: 800px;
+    }
+
+    .header_wrap {height: 60px;}
+
+    h1 {
+        width: 140px;
+        top: 43%;
+        left: 30px;
+    }
+
+    .hamburger {
+        width: 20px;
+        right: 30px;
+        display: block;
+    }
+    
+    .space_box_top {height: 80px;}
+    */
 }

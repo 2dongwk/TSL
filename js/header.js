@@ -38,6 +38,7 @@ $(document).ready(function(){
             $('.ham_on').css({'display':'none'}).removeClass('on')
         })
     })
+    
     $(window).resize(function(){
         if($(window).width() > 930){
             if($('.ham_on').hasClass('on') == true){
