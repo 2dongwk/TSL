@@ -35,7 +35,7 @@ $(document).ready(function(){
     $('.text_menu li').mouseover(function(){
         $(this).css({'color':'#f3f3f3'})
     }).mouseout(function(){
-        $(this).css({'color':'#999999'})
+        $(this).css({'color':'#606060'})
     })
 
     $('.text_menu li').click(function(){
