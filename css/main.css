@@ -150,7 +150,7 @@ article {
     height: 80%;
     position: absolute;
     bottom: 0;
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.2), rgba(0,0,0,0.4), rgba(0,0,0,0.7));
 }
 
 .slider_info {
