@@ -26,9 +26,7 @@ $(document).ready(function(){
     }
     
     $('.slider_info a').mouseover(function(){
-        $('.arrow').stop().animate({'right':'0'},500,function(){
-            $(this).stop().animate({'right':'1%'},500)
-        })
+        arrow()
         arrow_on = setInterval(arrow, 1000)
     }).mouseout(function(){
         clearInterval(arrow_on)

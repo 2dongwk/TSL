@@ -3,6 +3,9 @@
 a {color: inherit;}
 body {background-color: #181818; color: #999999;}
 
+::-webkit-scrollbar-thumb {box-shadow: inset 6px 6px 0 rgba(255, 255, 255, 0.15);}
+::-webkit-scrollbar-thumb:hover {box-shadow: inset 6px 6px 0 rgba(255, 255, 255, 0.3);}
+
 header .menu li:nth-child(1) a {color: #ffffff!important;}
 .ham_menu li:nth-child(1) a {color: #000000!important;}
 
@@ -286,6 +289,7 @@ h4 {
         height: calc(100% - 95px);
         margin-top: 0;
         border-radius: 0;
+        overflow: overlay;
     }
     
     .right_box {
@@ -414,7 +418,7 @@ h4 {
     }
 }
 
-@media only screen and (max-width: 800px) and (min-width: 521px) {
+@media only screen and (max-width: 800px) and (min-width: 701px) {
     .info {width: 100%;}
 
     .left_box {
