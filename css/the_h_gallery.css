@@ -75,6 +75,12 @@ h2 {
 .people_thumbnail li:nth-child(2) {background: url(../img/the_h_gallery/jinchul_choi.webp) no-repeat;}
 .people_thumbnail li:nth-child(3) {background: url(../img/the_h_gallery/hyukjae_kweon.webp) no-repeat;}
 
+.people_thumbnail li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .people_thumbnail span {
     display: block;
     width: 56px;
