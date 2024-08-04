@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    $('section').css({'opacity':'1'})
+
     let cr_menu_w = $('.career_menu li:first').width(),
         cr_menu_x = $('.career_menu li:first').position().left,
         cr_h = $('.career_menu').height() + $('.career_project').height() + 90;
@@ -48,6 +50,8 @@ $(document).ready(function(){
     
 
     $('.career_menu li:lt(3)').click(function(){
+        if($(this).hasClass('focus')) return
+
         cr_menu_w = $(this).width()
         cr_menu_x = $(this).position().left
 
