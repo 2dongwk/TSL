@@ -83,9 +83,10 @@ header {
 h1 {
     width: 170px;
     position: absolute;
-    top: 47%;
+    top: 50%;
     left: 40px;
     transform: translate(0, -50%);
+    font-size: 16px;
     display: none;
 }
 
@@ -239,7 +240,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 550px) and (min-width: 431px) {
     .h_bg {filter: blur(20px);}
 
     .menu, .lang {display: none;}
@@ -305,16 +306,17 @@ footer {
         width: max-content;
         font-size: 13px;
     }
+}
 
-    /*
+@media only screen and (max-width: 430px) {
     header {
-        height: 60px;
+        height: 40px;
         border-radius: 20px;
         top: 10px;
     }
 
     .h_bg {
-        height: 60px;
+        height: 40px;
         filter: blur(10px);
     }
 
@@ -323,20 +325,84 @@ footer {
         height: 800px;
     }
 
-    .header_wrap {height: 60px;}
+    .header_wrap {height: 40px;}
 
     h1 {
-        width: 140px;
-        top: 43%;
-        left: 30px;
+        width: 100px;
+        left: 20px;
     }
 
     .hamburger {
-        width: 20px;
-        right: 30px;
+        width: 16px;
+        right: 20px;
         display: block;
     }
     
-    .space_box_top {height: 80px;}
-    */
+    .space_box_top {height: 60px;}
+
+    .h_bg {filter: blur(20px);}
+
+    .menu, .lang {display: none;}
+    .hamburger {display: block;}
+    .ham_on {display: block;}
+
+    .ham_on {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        display: none;
+    }
+
+    .ham_bg {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.4);
+        opacity: 0;
+    }
+
+    .ham_nav {
+        width: 200px;
+        height: 100vh;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        background-color: #f3f3f3;
+    }
+
+    .ham_menu {
+        width: 60%;
+        height: fit-content;
+        margin: 0 auto;
+        margin-top: 80px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .ham_lang {
+        width: 60%;
+        height: fit-content;
+        margin-bottom: 50px;
+        position: absolute;
+        left: 20%;
+        bottom: 0;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .ham_menu li, .ham_lang li {margin: 30px 0;}
+    .ham_nav a {color: #999999; transition-duration: 0.2s;}
+    .ham_nav a:hover {color: #000000; text-decoration: underline;}
+    .ham_lang li:nth-child(1) a {color: #000000; text-decoration: none;}
+    
+    .space_box_btm {height: 50px;}
+    footer {height: 40px;}
+    .foot_text {
+        width: max-content;
+        font-size: 8px;
+    }
 }

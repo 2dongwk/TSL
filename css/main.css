@@ -246,7 +246,7 @@ h3 span {
     .con_menu {display: none;}
     .con_text {
         width: 100%;
-        height: 362px;
+        height: 400px;
         margin-right: 0;
     }
 
@@ -298,7 +298,9 @@ h3 span {
     .arrow {display: none;}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 431px) {    
+    body {font-size: 14px;}
+
     .con_text {
         width: 100%;
         min-width: 0;
@@ -312,24 +314,66 @@ h3 span {
         text-align: center;
     }
 
-    .con_text span {font-size: 15px;}
-    .con_text p {font-size: 15px;}
+    .con_text span {font-size: 0.9em;}
+    .con_text p {font-size: 0.9em;}
     .con_text h2 {
-        margin-bottom: 40px;
-        font-size: 60px;
+        margin-bottom: 30px;
+        font-size: 3.2em;
     }
 
     .slider {
         height: auto;
-        aspect-ratio: 1 / 0.5;
+        aspect-ratio: 1 / 0.55;
     }
 
-    .text_wrap {bottom: 38px;}
-    h3 {font-size: 34px;}
+    .text_wrap {bottom: 26px;}
+    h3 {font-size: 2.1em;}
+    h3 span {
+        display: block;
+        margin-top: 2px;
+        margin-left: 0;
+        font-size: 0.4em;
+    }
+    .arrow {display: none;}
+}
+
+@media only screen and (max-width: 430px) {
+    body {font-size: 10px;}
+
+    .con_text {
+        width: 100%;
+        min-width: 0;
+        height: 250px;
+        margin-right: 0;
+    }
+
+    .con_text_wrap {
+        width: 20%;
+        min-width: 450px;
+        text-align: center;
+    }
+
+    .con_text span {font-size: 0.9em;}
+    .con_text p {font-size: 0.9em;}
+    .con_text h2 {
+        margin-bottom: 20px;
+        font-size: 3.4em;
+    }
+
+    .slider {
+        height: auto;
+        aspect-ratio: 1 / 0.55;
+    }
+
+    .text_wrap {
+        left: 48%;
+        bottom: 0px;
+    }
+    h3 {font-size: 2.1em;}
     h3 span {
         display: block;
         margin-left: 0;
-        font-size: 15px;
+        font-size: 0.4em;
     }
     .arrow {display: none;}
 }

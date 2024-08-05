@@ -4,8 +4,8 @@ $(document).ready(function(){
     $('.filter li').click(function(){
         $('.work_list>li').css({'margin-top':'0', 'opacity':'1'})
 
-        if($(this).hasClass('on') == true){
-            $(this).removeClass('on')
+        if($(this).hasClass('on')){
+            $('.filter li').removeClass('on')
         }else{
             $(this).addClass('on').siblings('li').removeClass('on')
         }

@@ -38,7 +38,6 @@ header .menu li:nth-child(1) a {color: #ffffff!important;}
     cursor: pointer;
     transition-duration: 0.2s;
 }
-.filter li:hover {color: #000000;}
 
 .filter_theme {
     font-size: 24px;
@@ -146,6 +145,10 @@ h3 {
     color: #aaaaaa;
 }
 
+@media (hover: hover) {
+    .filter li:hover {color: #000000;}
+}
+
 @media only screen and (max-width: 1440px) and (min-width: 1101px) {
     .text_wrap {height: 48px;}
     
@@ -168,23 +171,12 @@ h3 {
     .filter_theme, .filter_year {
         width: fit-content;
         height: 100%;
-        display: flex;
-        justify-content: space-between;
         flex-direction: column;
-        letter-spacing: -0.02em;
-        color: #999999;
     }
-    
-    .filter li {
-        cursor: pointer;
-        transition-duration: 0.2s;
-    }
-    .filter li:hover {color: #000000;}
     
     .filter_theme {
         float: right;
         align-items: flex-start;
-        font-weight: 600;
         border-left: 1px solid #bbbbbb;
         border-bottom: none;
     }
@@ -199,21 +191,14 @@ h3 {
         margin-left: 10px;
         align-items: flex-end;
     }
-
+    
+    .filter_year li {margin-top: 0;}
     .filter_year li:last-child {margin-right: 20px;}
 
-    .filter_year li {
-        margin-top: 0;
-        margin-right: 20px;
-    }
-    
     article {
         width: calc(95% - 280px);
         margin-right: 2.5%;
         float: right;
-        opacity: 0;
-        transition-duration: 1s;
-        transition-delay: 0.8s;
     }
     
     .work_list {width: 100%;}
@@ -223,7 +208,6 @@ h3 {
     .content_wrap {
         width: calc(100% - 40px);
         height: calc(100% - 50px);
-        margin: 0 auto;
         padding-top: 20px;
     }
     
@@ -235,7 +219,10 @@ h3 {
     
     .text_wrap p {font-size: 13px;}
 
-    .space_box_btm {height: 80px; float: right;}
+    .space_box_btm {
+        height: 80px;
+        float: right;
+    }
 }
 
 @media only screen and (max-width: 950px) and (min-width: 851px) {
@@ -253,25 +240,11 @@ h3 {
     .filter_theme, .filter_year {
         width: fit-content;
         height: 100%;
-        display: flex;
         flex-direction: column;
-        letter-spacing: -0.02em;
-        color: #999999;
     }
-    
-    .filter li {
-        cursor: pointer;
-        transition-duration: 0.2s;
-    }
-    .filter li:hover {color: #000000;}
     
     .filter_theme {
-        margin-left: 10px;
-        padding-bottom: 20px;
-        justify-content: space-between;
         align-items: flex-start;
-        font-size: 20px;
-        font-weight: 600;
         border-bottom: none;
     }
     
@@ -289,9 +262,7 @@ h3 {
         font-size: 13px;
         display: none;
     }
-
-    .filter_year li:last-child {margin-right: 0;}
-
+    
     .filter_year li {
         width: 100%;
         height: 20%;
@@ -299,14 +270,13 @@ h3 {
         margin-right: 0;
         text-align: center;
     }
+
+    .filter_year li:last-child {margin-right: 0;}
     
     article {
         width: calc(95% - 180px);
         margin-right: 2.5%;
         float: right;
-        opacity: 0;
-        transition-duration: 1s;
-        transition-delay: 0.8s;
     }
     
     .work_list {width: 100%;}
@@ -316,7 +286,6 @@ h3 {
     .content_wrap {
         width: calc(100% - 40px);
         height: calc(100% - 50px);
-        margin: 0 auto;
         padding-top: 20px;
     }
     
@@ -328,7 +297,10 @@ h3 {
     
     .text_wrap p {font-size: 12px;}
 
-    .space_box_btm {height: 80px; float: right;}
+    .space_box_btm {
+        height: 80px;
+        float: right;
+    }
 }
 
 @media only screen and (max-width: 850px) and (min-width: 691px) {
@@ -346,17 +318,8 @@ h3 {
     .filter_theme, .filter_year {
         width: fit-content;
         height: 100%;
-        display: flex;
         flex-direction: column;
-        letter-spacing: -0.02em;
-        color: #999999;
     }
-    
-    .filter li {
-        cursor: pointer;
-        transition-duration: 0.2s;
-    }
-    .filter li:hover {color: #000000;}
     
     .filter_theme {
         margin-left: 10px;
@@ -364,7 +327,6 @@ h3 {
         justify-content: space-between;
         align-items: flex-start;
         font-size: 20px;
-        font-weight: 600;
         border-bottom: none;
     }
     
@@ -383,8 +345,6 @@ h3 {
         display: none;
     }
 
-    .filter_year li:last-child {margin-right: 0;}
-
     .filter_year li {
         width: 100%;
         height: 20%;
@@ -392,14 +352,11 @@ h3 {
         margin-right: 0;
         text-align: center;
     }
-    
+        
     article {
         width: calc(95% - 180px);
         margin-right: 2.5%;
         float: right;
-        opacity: 0;
-        transition-duration: 1s;
-        transition-delay: 0.8s;
     }
     
     .work_list {width: 100%;}
@@ -412,7 +369,6 @@ h3 {
     .content_wrap {
         width: calc(100% - 40px);
         height: calc(100% - 30px);
-        margin: 0 auto;
         padding-top: 20px;
     }
     
@@ -437,7 +393,10 @@ h3 {
         text-align: center;
     }
 
-    .space_box_btm {height: 70px; float: right;}
+    .space_box_btm {
+        height: 70px;
+        float: right;
+    }
 }
 
 @media only screen and (max-width: 690px) and (min-width: 626px) {
@@ -455,17 +414,8 @@ h3 {
     .filter_theme, .filter_year {
         width: fit-content;
         height: 100%;
-        display: flex;
         flex-direction: column;
-        letter-spacing: -0.02em;
-        color: #999999;
     }
-    
-    .filter li {
-        cursor: pointer;
-        transition-duration: 0.2s;
-    }
-    .filter li:hover {color: #000000;}
     
     .filter_theme {
         margin-left: 10px;
@@ -473,7 +423,6 @@ h3 {
         justify-content: space-between;
         align-items: flex-start;
         font-size: 20px;
-        font-weight: 600;
         border-bottom: none;
     }
     
@@ -492,8 +441,6 @@ h3 {
         display: none;
     }
 
-    .filter_year li:last-child {margin-right: 0;}
-
     .filter_year li {
         width: 100%;
         height: 20%;
@@ -506,9 +453,6 @@ h3 {
         width: calc(95% - 180px);
         margin-right: 2.5%;
         float: right;
-        opacity: 0;
-        transition-duration: 1s;
-        transition-delay: 0.8s;
     }
     
     .work_list {width: 100%;}
@@ -521,7 +465,6 @@ h3 {
     .content_wrap {
         width: calc(100% - 40px);
         height: calc(100% - 30px);
-        margin: 0 auto;
         padding-top: 20px;
     }
     
@@ -546,10 +489,13 @@ h3 {
         text-align: center;
     }
 
-    .space_box_btm {height: 70px; float: right;}
+    .space_box_btm {
+        height: 70px;
+        float: right;
+    }
 }
 
-@media only screen and (max-width: 625px) {
+@media only screen and (max-width: 625px) and (min-width: 431px) {
     .filter {
         width: fit-content;
         height: 50%;
@@ -564,17 +510,8 @@ h3 {
     .filter_theme, .filter_year {
         width: fit-content;
         height: 100%;
-        display: flex;
         flex-direction: column;
-        letter-spacing: -0.02em;
-        color: #999999;
     }
-    
-    .filter li {
-        cursor: pointer;
-        transition-duration: 0.2s;
-    }
-    .filter li:hover {color: #000000;}
     
     .filter_theme {
         margin-left: 10px;
@@ -582,7 +519,6 @@ h3 {
         justify-content: space-between;
         align-items: flex-start;
         font-size: 20px;
-        font-weight: 600;
         border-bottom: none;
     }
     
@@ -601,8 +537,6 @@ h3 {
         display: none;
     }
 
-    .filter_year li:last-child {margin-right: 0;}
-
     .filter_year li {
         width: 100%;
         height: 20%;
@@ -615,9 +549,6 @@ h3 {
         width: calc(95% - 180px);
         margin-right: 2.5%;
         float: right;
-        opacity: 0;
-        transition-duration: 1s;
-        transition-delay: 0.8s;
     }
     
     .work_list {width: 100%;}
@@ -630,7 +561,6 @@ h3 {
     .content_wrap {
         width: calc(100% - 40px);
         height: calc(100% - 30px);
-        margin: 0 auto;
         padding-top: 20px;
     }
     
@@ -655,5 +585,109 @@ h3 {
         text-align: center;
     }
 
-    .space_box_btm {height: 70px; float: right;}
+    .space_box_btm {
+        height: 150px;
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .filter {
+        width: fit-content;
+        height: 50%;
+        min-height: 180px;
+        max-height: 250px;
+        margin-left: 2.5%;
+        margin-top: 20px;
+        float: left;
+        position: fixed;
+    }
+    
+    .filter_theme, .filter_year {
+        width: fit-content;
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    .filter_theme {
+        margin-left: 10px;
+        padding-bottom: 20px;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 16px;
+        border-bottom: none;
+    }
+    
+    .filter_theme li {
+        width: 100%;
+        margin-bottom: 0;
+    }
+        
+    .filter_year {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 10px;
+        justify-content: flex-start;
+        align-items: flex-end;
+        font-size: 13px;
+        display: none;
+    }
+
+    .filter_year li {
+        width: 100%;
+        height: 20%;
+        margin-top: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    article {
+        width: calc(95% - 140px);
+        margin-right: 2.5%;
+        float: right;
+    }
+    
+    .work_list {width: 100%;}
+    
+    .work_list>li {
+        width: 100%;
+        aspect-ratio: 1 / 0.85;
+        margin-bottom: 5%;
+        border-radius: 20px;
+    }
+    
+    .content_wrap {
+        width: calc(100% - 30px);
+        height: calc(100% - 15px);
+        padding-top: 15px;
+    }
+    
+    .img_wrap {
+        height: 65%;
+        border-radius: 10px;
+    }
+
+    .img_wrap li img {width: 115%;}
+    
+    .text_wrap {
+        height: 26px;
+        margin-top: 7%;
+    }
+    
+    h3 {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .text_wrap p {
+        width: 100%;
+        font-size: 7px;
+        text-align: center;
+    }
+
+    .space_box_btm {
+        height: 150px;
+        float: right;
+    }
 }
