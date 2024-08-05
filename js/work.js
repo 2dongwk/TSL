@@ -35,5 +35,4 @@ $(document).ready(function(){
         $(this).find('.img_wrap li:first').stop().animate({'opacity':'1'},400)
         .siblings('li').stop().animate({'opacity':'0'},400)
     })
-    
 })

@@ -126,7 +126,7 @@ $(document).ready(function(){
     $(window).resize(function(){
         $('.people_list').on('mousewheel DOMMouseScroll',function(event){
             event.preventDefault();
-            if($('.people_list_wrap').is(':animated')) return
+            if($('.people_list_wrap').is(':animated')) return //not animated로 하고 안에 실행구문을 넣는 방법도 있다.
             
             page_num = $('.people_list_wrap').width() / 5
             

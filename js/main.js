@@ -51,5 +51,4 @@ $(document).ready(function(){
             $('.con_menu').css({'display':'block'})
         }
     })
-    
 })
