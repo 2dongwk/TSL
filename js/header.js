@@ -1,4 +1,10 @@
 $(document).ready(function(){
+    $(window).bind("pageshow", function(fresh) {
+        if(fresh.originalEvent && fresh.originalEvent.persisted){
+            window.location.reload()
+        }
+    })
+
     let bg_back = 45;
 
     $('header').delay(500).fadeIn(600)
@@ -68,11 +74,5 @@ $(document).ready(function(){
         }
 
         scroll_now = scroll_top
-    })
-
-    $(window).bind("pageshow", function(fresh) {
-        if(fresh.originalEvent && fresh.originalEvent.persisted){
-            window.location.reload()
-        }
     })
 })
