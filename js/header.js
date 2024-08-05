@@ -41,7 +41,7 @@ $(document).ready(function(){
     
     $(window).resize(function(){
         if($(window).width() > 930){
-            if($('.ham_on').hasClass('on') == true){
+            if($('.ham_on').hasClass('on')){
                 $('body').css({'padding-right':'0', 'overflow':'auto'})
                 $('header').css({'width':'95%', 'left':'50%'})
                 $('.ham_on').css({'display':'none'}).removeClass('on')
@@ -57,10 +57,10 @@ $(document).ready(function(){
     $(window).on('scroll',function(){
         let scroll_top = $(this).scrollTop();
 
-        if(scroll_top > scroll_now){
-            $('header').stop().fadeOut(200)
-        }else{
-            if((scroll_now - scroll_top) > show_range){
+        if($(this).width() > 430){
+            if(scroll_top > scroll_now){
+                $('header').stop().fadeOut(200)
+            }else if((scroll_now - scroll_top) > show_range){
                 $('header').stop().fadeIn()
             }else if(scroll_top < 20){
                 $('header').stop().fadeIn()
