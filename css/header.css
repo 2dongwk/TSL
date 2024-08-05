@@ -234,6 +234,7 @@ footer {
     
     .space_box_btm {height: 70px;}
     footer {height: 40px;}
+
     .foot_text {
         width: max-content;
         font-size: 13px;
@@ -241,7 +242,7 @@ footer {
 }
 
 @media only screen and (max-width: 550px) and (min-width: 431px) {
-    .h_bg {filter: blur(20px);}
+    .h_bg {filter: blur(17px);}
 
     .menu, .lang {display: none;}
     .hamburger {display: block;}
@@ -302,6 +303,7 @@ footer {
     
     .space_box_btm {height: 70px;}
     footer {height: 40px;}
+
     .foot_text {
         width: max-content;
         font-size: 13px;
@@ -317,12 +319,12 @@ footer {
 
     .h_bg {
         height: 40px;
-        filter: blur(10px);
+        filter: blur(8px);
     }
 
     .h_bg>img {
-        width: 800px;
-        height: 800px;
+        width: 450px;
+        height: 450px;
     }
 
     .header_wrap {height: 40px;}
@@ -339,8 +341,6 @@ footer {
     }
     
     .space_box_top {height: 60px;}
-
-    .h_bg {filter: blur(20px);}
 
     .menu, .lang {display: none;}
     .hamburger {display: block;}
@@ -401,6 +401,7 @@ footer {
     
     .space_box_btm {height: 50px;}
     footer {height: 40px;}
+
     .foot_text {
         width: max-content;
         font-size: 8px;
