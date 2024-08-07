@@ -188,7 +188,7 @@ h4 {
     width: 95%;
     max-width: 1600px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 20px;
     opacity: 0;
 }
 
@@ -317,9 +317,7 @@ h4 {
         opacity: 1!important;
     }
     
-    .detail_img {
-        margin-top: 12%;
-    }
+    .detail_img {margin-top: 12%;}
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 901px) {
@@ -368,9 +366,7 @@ h4 {
         opacity: 1!important;
     }
     
-    .detail_img {
-        margin-top: 10%;
-    }
+    .detail_img {margin-top: 10%;}
 }
 
 @media only screen and (max-width: 900px) and (min-width: 801px) {
@@ -419,9 +415,7 @@ h4 {
         opacity: 1!important;
     }
     
-    .detail_img {
-        margin-top: 7%;
-    }
+    .detail_img {margin-top: 7%;}
 }
 
 @media only screen and (max-width: 800px) and (min-width: 701px) {
