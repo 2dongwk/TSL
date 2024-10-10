@@ -44,8 +44,12 @@ article {
     display: none;
 }
 
-.info li:nth-child(1) {
+.info li:nth-child(1) {display: block;}
+
+.info li:nth-child(1)>a {
     display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .img_wrap {

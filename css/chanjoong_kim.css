@@ -11,8 +11,8 @@ body {background-color: #181818; color: #999999;}
 ::-webkit-scrollbar-thumb {box-shadow: inset 6px 6px 0 rgba(255, 255, 255, 0.15);}
 ::-webkit-scrollbar-thumb:hover {box-shadow: inset 6px 6px 0 rgba(255, 255, 255, 0.3);}
 
-header .menu li:nth-child(2) a {color: #ffffff!important;}
-.ham_menu li:nth-child(2) a {color: #000000!important;}
+header .menu li:nth-child(4) a {color: #ffffff!important;}
+.ham_menu li:nth-child(4) a {color: #000000!important; text-decoration: none;}
 
 section {
     opacity: 0;

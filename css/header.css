@@ -197,7 +197,7 @@ footer {
     }
 
     .ham_nav {
-        width: 200px;
+        width: 260px;
         height: 100vh;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
@@ -208,26 +208,28 @@ footer {
     }
 
     .ham_menu {
-        width: 60%;
         height: fit-content;
         margin: 0 auto;
-        margin-top: 80px;
+        margin-top: 120px;
         font-size: 24px;
         font-weight: 700;
     }
 
     .ham_lang {
-        width: 60%;
+        width: 30%;
         height: fit-content;
         margin-bottom: 50px;
         position: absolute;
-        left: 20%;
-        bottom: 0;
+        left: 50%;
+        bottom: 20px;
+        transform: translate(-50%, 0);
         font-size: 24px;
         font-weight: 700;
+        display: flex;
+        justify-content: space-between;
     }
 
-    .ham_menu li, .ham_lang li {margin: 30px 0;}
+    .ham_menu li, .ham_lang li {margin: 32px 0; text-align: center;}
     .ham_nav a {color: #999999; transition-duration: 0.2s;}
     .ham_nav a:hover {color: #000000; text-decoration: underline;}
     .ham_lang li:nth-child(1) a {color: #000000; text-decoration: none;}
@@ -266,7 +268,7 @@ footer {
     }
 
     .ham_nav {
-        width: 200px;
+        width: 260px;
         height: 100vh;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
@@ -277,26 +279,28 @@ footer {
     }
 
     .ham_menu {
-        width: 60%;
         height: fit-content;
         margin: 0 auto;
-        margin-top: 80px;
+        margin-top: 120px;
         font-size: 24px;
         font-weight: 700;
     }
 
     .ham_lang {
-        width: 60%;
+        width: 30%;
         height: fit-content;
         margin-bottom: 50px;
         position: absolute;
-        left: 20%;
-        bottom: 0;
+        left: 50%;
+        bottom: 20px;
+        transform: translate(-50%, 0);
         font-size: 24px;
         font-weight: 700;
+        display: flex;
+        justify-content: space-between;
     }
 
-    .ham_menu li, .ham_lang li {margin: 30px 0;}
+    .ham_menu li, .ham_lang li {margin: 32px 0; text-align: center;}
     .ham_nav a {color: #999999; transition-duration: 0.2s;}
     .ham_nav a:hover {color: #000000; text-decoration: underline;}
     .ham_lang li:nth-child(1) a {color: #000000; text-decoration: none;}
@@ -364,7 +368,7 @@ footer {
     }
 
     .ham_nav {
-        width: 200px;
+        width: 260px;
         height: 100vh;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
@@ -375,26 +379,28 @@ footer {
     }
 
     .ham_menu {
-        width: 60%;
         height: fit-content;
         margin: 0 auto;
-        margin-top: 80px;
+        margin-top: 120px;
         font-size: 24px;
         font-weight: 700;
     }
 
     .ham_lang {
-        width: 60%;
+        width: 30%;
         height: fit-content;
         margin-bottom: 50px;
         position: absolute;
-        left: 20%;
-        bottom: 0;
+        left: 50%;
+        bottom: 20px;
+        transform: translate(-50%, 0);
         font-size: 24px;
         font-weight: 700;
+        display: flex;
+        justify-content: space-between;
     }
 
-    .ham_menu li, .ham_lang li {margin: 30px 0;}
+    .ham_menu li, .ham_lang li {margin: 32px 0; text-align: center;}
     .ham_nav a {color: #999999; transition-duration: 0.2s;}
     .ham_nav a:hover {color: #000000; text-decoration: underline;}
     .ham_lang li:nth-child(1) a {color: #000000; text-decoration: none;}
